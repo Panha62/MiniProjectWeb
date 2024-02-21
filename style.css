@@ -186,6 +186,10 @@ ul {
       .user {
         display: none;
       }
+
+      .search {
+        display: none;
+      }
     }
   }
 
