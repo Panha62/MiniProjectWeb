@@ -710,6 +710,13 @@ main {
           transition: all 0.4s ease-in-out;
           box-shadow: 0 0 8px #3e3a65;
         }
+
+        @media screen and (max-width: 768px) {
+          & .event-card {
+            flex-direction: column;
+            gap: 1rem;
+          }
+        }
       }
     }
 
