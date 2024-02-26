@@ -18,7 +18,7 @@
         <span class="title"><strong>Smart</strong>Learn</span>
 
         <span class="icon-small">
-          <i class="fa-solid fa-bars icon-white"></i>
+          <i onclick="toggleNav()" class="fas fa-bars icon-white"></i>
         </span>
 
         <!-- navigation elements -->
@@ -28,6 +28,20 @@
           <li><a href="./About/about.html" target="_blank">About Us</a></li>
           <li><a href="">Shop</a></li>
         </ul>
+
+        <section class="nav">
+          <div class="nav-container">
+            <ul id="navList">
+              <li><a href="#">Log in / Log out</a></li>
+              <li><a href="#">Search</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="./course/course.html" target="_blank">Course</a></li>
+              <li><a href="./About/about.html" target="_blank">About Us</a></li>
+              <li><a href="">Shop</a></li>
+            </ul>
+          </div>
+          
+        </section>
 
         <span class="search">
           <input type="text" placeholder="Search..." />
@@ -60,6 +74,20 @@
           <img src="src/images/hero.png" alt="banner" />
         </div>
       </section>
+
+      <script>
+        // JavaScript function to toggle the visibility of the navigation list
+        function toggleNav() {
+          var navList = document.getElementById("navList");
+          var navListStyle = window.getComputedStyle(navList);
+
+          if (navListStyle.display === "none") {
+            navList.style.display = "flex";
+          } else {
+            navList.style.display = "none";
+          }
+        }
+      </script>
     </header>
 
     <!-- main body -->

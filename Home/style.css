@@ -135,6 +135,35 @@ ul {
       }
     }
 
+    & .nav {
+      position: absolute;
+      top: 10rem;
+      right: 1rem;
+
+      & .nav-container {
+        background-color: var(--txt-light);
+        border-radius: 10px;
+        & ul {
+          display: flex;
+          flex-direction: column;
+          list-style: none;
+          padding: 0;
+          display: none;
+          & li {
+            padding: 0.8rem 2rem;
+            color: var(--txt-blur);
+          }
+
+          & li:hover {
+            background-color: var(--background-one);
+            transition: all 0.4s ease-in-out;
+            box-shadow: 0 0 3px #3e3a65;
+            color: var(--secondary-light);
+          }
+        }
+      }
+    }
+
     & .search {
       position: relative;
       & input {
